@@ -42,13 +42,6 @@ header {
 }
 
 
-video {
-    width: 35%; /* Makes the video full width */
-    height: auto; /* Keeps the aspect ratio */
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
 .logo-container {
     margin-right: 2px;
 }
@@ -145,12 +138,28 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 0, 0, 0.555); /* Dark background with transparency */
-    color: #FFD700; /* Gold text */
+    background-color: rgba(255, 0, 0, 0.555);
+    color: #FFD700;
     opacity: 0; /* Hidden by default */
     border-radius: 50%;
     transition: opacity 0.9s ease;
     text-align: center;
+}
+
+/* Show overlay on desktop hover */
+@media (min-width: 768px) {
+    .player:hover .player-img {
+        opacity: 0.55;
+    }
+
+    .player:hover .player-stats {
+        opacity: 1;
+    }
+}
+
+/* Visible class to show overlay on mobile */
+.player-stats.visible {
+    opacity: 1;
 }
 
 .player:hover .player-img {

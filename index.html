@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fbc Snipers Nový Jičín, florbalový klub">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FBC Snipers Nový Jičín</title>
+    <link rel="icon" type="image/x-icon" href="logo-malinke.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,18 +31,9 @@
         <h2>O nás</h2>
         <p> Naše florbalová odysea započala v roce 2014, kdy se několik vášnivých nadšenců rozhodlo přetavit svůj sen v realitu. Po letech tvrdého tréninku, propocených dresů a neúnavného odhodlání jsme se stali symbolem houževnatosti a nezdolného ducha.</p>
     </p> 
-    </p>
-        </p> Aktuální sezónu korunovaly účasti na prestižním Hornets Cupu, kde jsme dokazovali své schopnosti každým zápasem. Vrchol sezóny však přišel v Tovačově, kde jsme s hrdostí a nadšením přetavili naše úsilí ve vítězství. Posledním turnajem, na kterém se naši borci představili byl novojičínský O-Cup, kde v úzké sestavě potvrdili své kvality zejména demolicí novojičínského rivala FBC RedBull. </p>
-    </p>    
-    </p>
-        </p> S každým zápasem, s každým tréninkem, posouváme své hranice a společně píšeme kapitolu za kapitolou našeho příběhu. Jsme tým, který se vrací na výsluní....🚀🔥🧊💪🎉
+        <p> Aktuální sezónu korunovaly účasti na prestižním Hornets Cupu, kde jsme dokazovali své schopnosti každým zápasem. Vrchol sezóny však přišel v Tovačově, kde jsme s hrdostí a nadšením přetavili naše úsilí ve vítězství. Posledním turnajem, na kterém se naši borci představili byl novojičínský O-Cup, kde v úzké sestavě potvrdili své kvality zejména demolicí novojičínského rivala FBC RedBull. </p>
+        <p> S každým zápasem, s každým tréninkem, posouváme své hranice a společně píšeme kapitolu za kapitolou našeho příběhu. Jsme tým, který se vrací na výsluní....🚀🔥🧊💪🎉
         </p>
-        <div class="video-container">
-            <video autoplay muted loop>
-                <source src="videjko.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
     </section>
 
     <section id="news" class="section">
@@ -75,7 +69,7 @@
     <section id="lineup" class="section">
         <h2>Soupiska</h2>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="jenda.png" alt="Jan Scotto" class="player-img">
                 <div class="player-stats">
@@ -92,7 +86,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="radim.jpg" alt="Radim Kaděra" class="player-img">
                 <div class="player-stats">
@@ -125,7 +119,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="kikin.png" alt="Kryštof Janík" class="player-img">
                 <div class="player-stats">
@@ -141,7 +135,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="dost.png" alt="Radek Dostál" class="player-img">
                 <div class="player-stats">
@@ -157,7 +151,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="kuba.png" alt="Jakub Theo Dostál" class="player-img">
                 <div class="player-stats">
@@ -173,7 +167,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="dzon.jpg" alt="Jan Bártek" class="player-img">
                 <div class="player-stats">
@@ -189,7 +183,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="kopec.jpg" alt="Ondřej Kopecký" class="player-img">
                 <div class="player-stats">
@@ -205,7 +199,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="alex.png" alt="Alex Biskup" class="player-img">
                 <div class="player-stats">
@@ -221,7 +215,7 @@
             </div>
         </div>
     
-        <div class="player">
+        <div class="player" onclick="toggleOverlay()">
             <div class="player-img-container">
                 <img src="zdeno.png" alt="Zdeněk Šván" class="player-img">
                 <div class="player-stats">
@@ -264,4 +258,10 @@
             });
         });
     });
+
+    function toggleOverlay() {
+    const overlay = document.querySelector('.player-stats');
+    overlay.classList.toggle('visible');
+}
+
 </script>
