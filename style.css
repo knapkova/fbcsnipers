@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     background-color: #e0c00c1f;
     color: #333;
+    cursor: url("./florball_ball_cursos_optimized.png"),pointer;
 }
 
 /* Header and Navigation */
@@ -19,6 +20,27 @@ header {
     padding: 20px 0;
     text-align: center;
 }
+
+/* Přidání animace Blur in pro h1 */ 
+.blur-in-text { 
+    animation-name: leBlurInRight; 
+    animation-duration: 3s; 
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes leBlurInRight { 
+    from { 
+        transform: scaleX(0.2) translateX(100px); 
+        filter: blur(20px); 
+        opacity: 0; 
+    } 
+    to { 
+        transform: scaleX(1) translateX(0); 
+        filter: blur(0); 
+        opacity: 1;
+    } 
+}
+
 
 video {
     width: 35%; /* Makes the video full width */
@@ -53,9 +75,27 @@ nav ul li a {
     color: #FFD700; /* Gold */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.6s;
 }
 
+nav ul li a:hover { 
+    color: #ff0000; /* Nová barva při najetí myší */ 
+}
+
+
 /* Section styles */
+#about p { 
+    margin-bottom: 1em; /* Nastavení mezery mezi odstavci pouze pro sekci #about */ 
+}
+
+#news p { 
+    margin-bottom: 0.5em; /* Nastavení mezery mezi odstavci pouze pro sekci #about */ 
+}
+
+article { 
+    margin-bottom: 2em; /* Nastavení mezery mezi články */ 
+}
+
 .section {
     padding: 20px;
     margin: 20px;
@@ -121,7 +161,6 @@ h2 {
     opacity: 1; /* Show stats on hover */
 }
 
-
 /* Footer */
 footer {
     text-align: center;
@@ -138,7 +177,9 @@ footer {
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     border-radius: 10px;
+    transition: border-radius 0.5s;
 }
+
 .calendar h3 {
     text-align: center;
     margin-bottom: 20px;
@@ -148,7 +189,13 @@ footer {
     padding: 10px;
     background-color: #eee;
     border-left: 5px solid rgb(255, 242, 0); /* Default color */
+    transition: background-color 0.7s, transform 0.7s;
 }
+
+.event:hover {
+    background-color:   rgb(255, 242, 0);
+}
+
 .event p {
     margin: 0;
 }
