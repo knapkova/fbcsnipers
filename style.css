@@ -214,3 +214,175 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Results Section */
+.results {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.notplayedresults{
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.results {
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fefae0; /* Light background */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.notplayedresults {
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* Light background */
+    transition: background-color 0.3s, transform 0.3s;
+}
+.results:hover {
+    background-color: #ffe9b3;
+    transform: scale(1.02);
+}
+
+.notplayedresults:hover {
+    background-color: #ffffff;
+    transform: scale(1.02);
+}
+/* Header for each result */
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 2px solid #FFD700;
+    margin-bottom: 10px;
+}
+
+.result-header .round {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.result-header .date {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Teams and score */
+.teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.team {
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.snipers {
+    color: #000000c4; /* Žlutý text */
+    text-shadow: 1px 1px 2px #ffff00, -1px -1px 2px #ffff00; /* Decentní žlutý stín */
+}
+
+
+.jiny {
+    color: #0c0059; /* Červená pro jiný tým */
+}
+
+.score {
+    width: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.win {
+    color: #0f8606; /* Zelená pro výhru */
+}
+
+.loss {
+    color: #b11010; /* Červená pro prohru */
+}
+
+/* Tabulka s výsledky */
+
+table {
+    font-family: 'Trebuchet MS', sans-serif;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+th, td {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid #5e5d5d;
+}
+
+th {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #FFD700; /* Zlaté pozadí pro hlavičky */
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase; /* Všechny názvy ve hlavičce budou velkými písmeny */
+    letter-spacing: 1px; /* Větší mezera mezi písmeny */
+}
+
+td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Světle šedá pro sudé řádky */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f4df6b; /* Bílé pozadí pro liché řádky */
+}
+.bold {
+    font-weight: bold;
+    color: #000;
+}
+
+.team {
+    font-weight: bold;
+    color: #000;
+}
+
+.snipers {
+    color: #000000; /* Žlutá pro Snipers */
+    text-shadow: 1px 1px 2px #ffff00, -1px -1px 2px #ffff00; /* Decentní žlutý stín */
+}
+
+.jiny {
+    color: #0c0059; /* Modrá pro ostatní týmy */
+}
+
+.score {
+    width: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
