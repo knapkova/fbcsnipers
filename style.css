@@ -299,8 +299,21 @@ footer {
 }
 
 .snipers {
-    color: #000000c4; /* Žlutý text */
-    text-shadow: 1px 1px 2px #ffff00, -1px -1px 2px #ffff00; /* Decentní žlutý stín */
+    background: linear-gradient(270deg, #ffff00, #ff0000, #000000, #ff0000, #ffff00);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s linear infinite;
+
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
 }
 
 
@@ -365,10 +378,6 @@ td {
     color: #000;
 }
 
-.snipers {
-    color: #000000; /* Žlutá pro Snipers */
-    text-shadow: 1px 1px 2px #ffff00, -1px -1px 2px #ffff00; /* Decentní žlutý stín */
-}
 
 .jiny {
     color: #0c0059; /* Modrá pro ostatní týmy */
